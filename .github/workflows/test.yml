@@ -32,6 +32,14 @@ jobs:
           go-version: ^1.13
         id: go
         
+      - name: Install dependencies
+        run: |
+         go get -u "github.com/didip/tollbooth"
+
+      - name: Install 
+        working-directory: /home/runner/go/src/github.com/didip/tollbooth/
+        run: | 
+          go get -u "github.com/didip/tollbooth_chi"
       # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
       # This step uses GitHub's checkout: https://github.com/actions/checkout
       - name: Check out code into the Go module directory
