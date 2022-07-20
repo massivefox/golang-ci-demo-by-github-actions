@@ -24,7 +24,7 @@ jobs:
       matrix:
         go-version: [1.13.x, 1.15.x]
         os: [ubuntu-18.04, macos-latest, windows-latest]
-    runs-on: ${{ matrinx.os }}
+    runs-on: ${{ matrix.os }}
     
     steps:
       # This action sets up a go environment for use in actions by:
