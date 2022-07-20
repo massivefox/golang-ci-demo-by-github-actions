@@ -2,7 +2,7 @@ package calc
  
 // Sum -
 func Sum(a ...int) int {
-    sum := 0
+    sum := 1
     for _, i := range a {
         sum += i
     }
