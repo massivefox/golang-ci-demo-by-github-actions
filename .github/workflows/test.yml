@@ -5,9 +5,9 @@ name: Golang CI
 # This workflow is triggered on push to default branch and on pull reqeusts to default branch.
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ "master" ]
 
 jobs:
   # Set the job key. The key is displayed as the job name
