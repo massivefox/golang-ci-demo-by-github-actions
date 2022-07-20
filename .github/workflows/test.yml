@@ -26,6 +26,8 @@ jobs:
       #     optionally downloading and caching a version of Go by version and adding to PATH
       #     registering problem matchers for error output
       # This step uses GitHub's setup-go: https://github.com/actions/setup-go
+      - name: set
+        run: go env -w GO111MODULE=off
       - name: Set up Go 1.x
         uses: actions/setup-go@v3
         with:
