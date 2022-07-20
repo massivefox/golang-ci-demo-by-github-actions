@@ -8,7 +8,8 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+  workflow_dispatch:
+  
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
